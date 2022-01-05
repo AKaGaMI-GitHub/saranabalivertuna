@@ -33,9 +33,9 @@ class Database extends Config
 	public $default = [
 		'DSN'      => '',
 		'hostname' => 'localhost',
-		'username' => 'k5802828_2019',
-		'password' => 'k8#;bB5G0;)E',
-		'database' => 'k5802828_2022',
+		'username' => 'k3044278_new_usr',
+		'password' => 'vQTsM!V2I5mX',
+		'database' => 'k3044278_new',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,

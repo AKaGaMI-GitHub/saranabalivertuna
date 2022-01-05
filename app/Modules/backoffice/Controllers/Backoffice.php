@@ -12,9 +12,8 @@ class Backoffice extends BaseController
     {
         if ($this->session->logged_in)
         {
-            return redirect()->to(base_url('manage_project')); 
-    		/*$data['model']= $this->data;
-    	    echo view('\App\Modules\backoffice\Views\dashboard.php', $data);*/
+    		$data['model']= $this->data;
+    	    echo view('\App\Modules\backoffice\Views\dashboard.php', $data);
         } else
         {
             $data['validation'] = $this->validation;
