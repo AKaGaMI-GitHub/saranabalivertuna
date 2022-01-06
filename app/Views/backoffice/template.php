@@ -16,18 +16,23 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/themes/default.css'); ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/nestle.css'); ?>">
     <style>
-        .table tbody tr td {
-            vertical-align: middle;
-        }
-        .navbar-default .navbar-toggle .icon-bar {
-            background-color: #fff;
-        }
-        @media (max-width: 767px){
-            .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-                color: #fff;
-            }
-        }
-    </style>
+        dl.defs{ margin: 10px 0 10px 40px; }
+        dl.defs dt{ font-weight: bold; line-height: 20px; margin: 10px 0 0 0; }
+        dl.defs dd{ margin: -20px 0 10px 160px; padding-bottom: 10px; border-bottom: solid 1px #eee;}
+        pre{ font-size: 12px; line-height: 16px; padding: 5px 5px 5px 10px; margin: 10px 0; background-color: #e4f4d4; border-left: solid 5px #9EC45F; overflow: auto; tab-size: 4; -moz-tab-size: 4; -o-tab-size: 4; -webkit-tab-size: 4; }
+
+        .wrapper{ background-color: #ffffff; width: 800px; border: solid 1px #eeeeee; padding: 20px; margin: 0 auto; }
+        #tabs{ margin: 20px -20px; border: none; }
+        #tabs, #ui-datepicker-div, .ui-datepicker{ font-size: 85%; }
+        .clear{ clear: both; }
+        
+        .example-container{ background-color: #f4f4f4; border-bottom: solid 2px #777777; margin: 0 0 20px 40px; padding: 20px; }
+        .example-container input{ border: solid 1px #aaa; padding: 4px; width: 175px; }
+        .ebook{}
+        .ebook img.ebookimg{ float: left; margin: 0 15px 15px 0; width: 100px; }
+        .ebook .buyp a iframe{ margin-bottom: -5px; }
+        .form-group{margin-bottom:3px;}
+	</style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="<?php echo base_url('public/js/bootstrap.js'); ?>"></script>
     <script src="<?php echo base_url('public/js/bootstrap-datetimepicker.min.js'); ?>"></script>
@@ -82,7 +87,16 @@
                                     </ul>
                                 </li>
                             </ul>
-                            
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin Setting<strong class="caret"></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Edit Account</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </nav>
                 </div>
