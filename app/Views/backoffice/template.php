@@ -41,72 +41,53 @@
 <body>
     <nav class="navbar navbar-default">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="<?php echo base_url('backoffice'); ?>">Dashboard</a>
-            </div>
-    
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Pengaturan <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<?php echo base_url('manage_pengaturan') ?>">Pengaturan Umum</a></li>
-                            <li><a href="<?php echo base_url('manage_menumanager') ?>">Menu Manager</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="<?php echo base_url('manage_service'); ?>">Service</a></li>
-                    <li><a href="<?php echo base_url('manage_client'); ?>">Client</a></li>
-                    <li><a href="<?php echo base_url('manage_award'); ?>">Award</a></li>
-                    <li><a href="<?php echo base_url('manage_berita'); ?>">Berita</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Project<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<?php echo base_url('manage_kategori_project'); ?>">Kategori Project</a></li>
-                            <li><a href="<?php echo base_url('manage_subkategori_project'); ?>">Subkategori Project</a></li>
-                            <li><a href="<?php echo base_url('manage_project'); ?>">Project</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Extra<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<?php echo base_url('manage_kontak'); ?>">Kontak Email</a></li>
-                            <li><a href="<?php echo base_url('manage_kontak_kami'); ?>">Kontak Kami</a></li>
-                            <li><a href="<?php echo base_url('manage_slider'); ?>">Slider</a></li>
-                            <li><a href="<?php echo base_url('manage_icon'); ?>">Icon</a></li>
-                            <li><a href="<?php echo base_url('manage_media'); ?>">Sosial Media</a></li>
-                            <li><a href="<?php echo base_url('manage_embed'); ?>">Embed</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="technical-support" href="<?php echo base_url('technical_support') ?>">Tehcnical Support</a>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="directory">Account <span
-                                    class="caret"></span></a>
-                        <ul class="dropdown-menu" aria-labelledby="directory">
-                            <li><a tabindex="-1" href="<?php echo base_url('manage_users/edit/'.$session->logged_in->id) ?>">Edit Account</a></li>
-                            <li><a tabindex="-1" href="<?php echo base_url('manage_users') ?>">Manage User</a></li>
-                            <li class="divider"></li>
-                            <li><a tabindex="-1" href="<?php echo base_url('backoffice/logout'); ?>">Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+            <div class="row clearfix">
+                <div class="col-sm-12 column">
+                    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="index.php">Home</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Umum<strong class="caret"></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Kontak Kami</a></li>
+                                        <li><a href="#">Testimoni</a></li>
+                                        <li><a href="#">Pengumuman</a></li>
+                                        <li><a href="#">Info Karir</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery<strong class="caret"></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Video Kegiatan</a></li>
+                                        <li><a href="#">Foto Kegiatan</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Content<strong class="caret"></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Slider</a></li>
+                                        <li><a href="#">Tentang Kami</a></li>
+                                        <li><a href="#">Pelayanan</a></li>
+                                        <li><a href="#">Mitra</a></li>
+                                        <li><a href="#">Investor</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Kategori Bank Data</a></li>
+                                        <li><a href="#">Bank Data</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Berita</a></li>
+                                        <li><a href="#">Find us on</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>        
+        </div>
     </nav>
     <div class="theme-showcase container">
     	<div style="font-weight:bold;color:#000000;height:20px;padding-top: -50px;">
